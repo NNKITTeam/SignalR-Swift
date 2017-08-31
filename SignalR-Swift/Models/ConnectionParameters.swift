@@ -13,6 +13,7 @@ class ConnectionParameters: Mappable {
     var clientProtocol: String?
     var connectionData: String?
     var connectionToken: String?
+    var accessToken: String?
     var transport: String?
     var queryString: [String: String]?
 
@@ -30,5 +31,6 @@ class ConnectionParameters: Mappable {
         connectionData <- map["connectionData"]
         connectionToken <- map["connectionToken"]
         queryString <- map["queryString"]
+        accessToken <- map["access_token"]
     }
 }

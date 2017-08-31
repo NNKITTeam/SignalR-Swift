@@ -39,6 +39,7 @@ public class Connection: ConnectionProtocol {
 
     public var connectionId: String?
     public var connectionToken: String?
+    public var accessToken: String?
     public var groupsToken: String?
     public var messageId: String?
 

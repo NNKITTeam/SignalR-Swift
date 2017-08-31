@@ -19,6 +19,7 @@ public protocol ConnectionProtocol: class {
     var items: [String: Any] { get set }
     var connectionId: String? { get set }
     var connectionToken: String? { get set }
+    var accessToken: String? { get set }
     var url: String { get }
     var queryString: [String: String]? { get }
     var state: ConnectionState { get }
