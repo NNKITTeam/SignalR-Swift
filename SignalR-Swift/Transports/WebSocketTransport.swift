@@ -85,6 +85,7 @@ public class WebSocketTransport: HttpTransport, WebSocketDelegate {
         var parameters: [String: Any] = [
             "transport": self.name!,
             "connectionToken": connection?.connectionToken ?? "",
+            "access_token": connection?.accessToken ?? "",
             "messageId": connection?.messageId ?? "",
             "groupsToken": connection?.groupsToken ?? "",
             "connectionData": self.connectionInfo?.data ?? ""

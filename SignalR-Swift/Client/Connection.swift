@@ -213,6 +213,7 @@ public class Connection: ConnectionProtocol {
             // clear the state for this connection
             self.connectionId = nil
             self.connectionToken = nil
+            self.accessToken = nil
             self.groupsToken = nil
             self.messageId = nil
 

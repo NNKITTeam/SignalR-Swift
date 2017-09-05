@@ -73,6 +73,7 @@ public class ServerSentEventsTransport: HttpTransport {
         var parameters = connection.queryString ?? [:]
         parameters["transport"] = self.name!
         parameters["connectionToken"] = connection.connectionToken ?? ""
+        parameters["access_token"] = connection.accessToken ?? ""
         parameters["messageId"] = connection.messageId ?? ""
         parameters["groupsToken"] = connection.groupsToken ?? ""
         parameters["connectionData"] = connectionData ?? ""

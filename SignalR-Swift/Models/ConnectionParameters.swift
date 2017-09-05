@@ -30,7 +30,7 @@ class ConnectionParameters: Mappable {
         transport <- map["transport"]
         connectionData <- map["connectionData"]
         connectionToken <- map["connectionToken"]
-        queryString <- map["queryString"]
         accessToken <- map["access_token"]
+        queryString <- map["queryString"]        
     }
 }

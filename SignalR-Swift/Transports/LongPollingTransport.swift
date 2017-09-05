@@ -64,6 +64,7 @@ public class LongPollingTransport: HttpTransport {
         var parameters: [String: Any] = [
             "transport": self.name!,
             "connectionToken": connection.connectionToken ?? "",
+            "access_token": connection.connectionToken ?? "",
             "connectionData": connectionData ?? "",
             "groupsToken": connection.groupsToken ?? "",
             "messageId": connection.messageId ?? ""
