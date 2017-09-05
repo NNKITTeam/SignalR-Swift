@@ -128,6 +128,7 @@ public class HttpTransport: ClientTransportProtocol {
         parameters.transport = self.name
         parameters.connectionData = connectionData
         parameters.connectionToken = connection.connectionToken
+        parameters.accessToken = connection.accessToken
         parameters.queryString = connection.queryString
         return parameters
     }
